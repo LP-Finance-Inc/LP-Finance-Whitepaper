@@ -1,6 +1,6 @@
 {
-  "short_name": "app.lp.finance",
-  "name": "app.lp.finance",
+  "short_name": "whitepaper.lp.finance",
+  "name": "whitepaper",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
