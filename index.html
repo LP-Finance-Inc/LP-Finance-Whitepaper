@@ -36,14 +36,25 @@
         margin:0;
         font-family:Monospace;
       }
-      object {
+
+      .pdf_Section {
+        overflow: scroll;
+        display: -webkit-box;
+      }
+
+      iframe {
         height: 100vh;
         width: 100%;
-        
       }
     </style>
   </head>
   <body>
-    <object data="./whitepaper.pdf" />
-    </body>
-  </html>
+
+    <div class="pdf_Section">
+      <iframe
+        src="./whitepaper.pdf" frameborder="0" scrolling="no">
+      </iframe>
+    </div>
+
+  </body>
+</html>
