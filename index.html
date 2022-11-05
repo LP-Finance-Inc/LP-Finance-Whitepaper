@@ -25,27 +25,23 @@
 
       body {
         margin:0;
-      }
-
-      #container {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 100%;
         height: 100%;
-        overflow: hidden;
+        width: 100%;
       }
 
     </style>
   </head>
   <body>
 
-    <div id="container">
-      <iframe type="application/pdf"
-        src="./whitepaper.pdf" frameborder="0" scrolling="no" style="height:
-        100vh;width:100%">
-      </iframe>
-    </div>
+    <iframe type="application/pdf" id="pdf"
+      src="./whitepaper.pdf">
+    </iframe>
 
+    <script>
+      let height = window.innerHeight;
+      let width = window.innerWidth;
+      document.getElementById("pdf").style.width = `${width}px`;
+      document.getElementById("pdf").style.height = `${height}px`;
+    </script>
   </body>
 </html>
